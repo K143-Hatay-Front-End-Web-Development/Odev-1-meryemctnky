@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Battle | Froggy</title>
+</head>
+<body>
+    <p></p>
+  <style>
+    * {
+    background:#293462;
+    margin:0 auto
+    }
+    p {
+    width:150px; 
+    height:100px;
+    background:#A64942;
+    margin-top:110px; 
+    border-radius:50px;
+    position:relative; 
+    overflow:hidden;
+    }
+    :before,:after{
+    content:'';
+    position:absolute;
+    }
+    p:before{
+    width:210px;
+    height:100px;
+    background:#FE5F55;
+    top:-30px;
+    left:-30px;
+    border-radius:50%;
+    }
+    p:after {
+    border:5px solid #293462;
+    border-radius:50%;
+    left:60px;
+    top:50px;
+    -webkit-box-reflect:right 10px;
+    }
+    body:after {
+    background: #293462;
+    width:10px;
+    height:10px;
+    border:10px solid #FFF1C1;
+    border-radius:50%;
+    box-shadow:0 0 0 10px #FE5F55;
+    left:200px;
+    top:95px;
+    -webkit-box-reflect:right 40px;
+    } 
+</style>
+</body>
+</html>
